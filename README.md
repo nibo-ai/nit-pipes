@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/NudgeIT/nit-pipes.svg?branch=master)](https://travis-ci.org/NudgeIT/nit-pipes)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/NudgeIT/nit-pipes/blob/master/LICENSE)
 
-Useful pipes for Angular with no external dependencies
+This is a collection of useful pipes for AngularIO (v>=4) with no external dependencies.
 
 ## Table of contents
 
