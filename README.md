@@ -1,4 +1,6 @@
 # nit-pipes  
+[![npm version](https://badge.fury.io/js/%40nudgeit%2Fnit-pipes.svg)](https://badge.fury.io/js/%40nudgeit%2Fnit-pipes)
+[![Build Status](https://travis-ci.org/NudgeIT/nit-pipes.svg?branch=master)](https://travis-ci.org/NudgeIT/nit-pipes)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/NudgeIT/nit-pipes/blob/master/LICENSE)
 
 Useful pipes for Angular with no external dependencies
