@@ -1,7 +1,7 @@
 # nit-pipes  
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/NudgeIT/nit-pipes/blob/master/LICENSE)
 
-> Useful pipes for Angular with no external dependencies
+Useful pipes for Angular with no external dependencies
 
 ## Table of contents
 
