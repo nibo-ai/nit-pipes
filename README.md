@@ -6,7 +6,7 @@ Useful pipes for Angular with no external dependencies
 ## Table of contents
 
  - [Installation](#installation)
- - [Pipes]
+ - [Pipes](#Pipes)
     - [join](#join)
     - [impureJoin](#impureJoin)
     - [initials](#initials)
