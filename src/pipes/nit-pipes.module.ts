@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 import { SafeUrlPipe } from './safe-url.pipe';
 import { InitialsPipe } from './initials.pipe';
 import { ArrayJoinPipe, ArrayImpureJoinPipe } from './array.join.pipe';
+import { IsArrayPipe } from './is.array.pipe';
 
 const NIT_PIPES = [
 	SafeUrlPipe,
 	InitialsPipe,
-	ArrayJoinPipe, ArrayImpureJoinPipe
+	ArrayJoinPipe, ArrayImpureJoinPipe,
+	IsArrayPipe
 ]
 
 @NgModule({
