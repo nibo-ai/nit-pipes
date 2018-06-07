@@ -13,6 +13,7 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [impureJoin](#impureJoin)
     - [initials](#initials)
     - [safeUrl](#safeUrl)
+    - [isArray](#isArray)
 
 ## Installation
 
@@ -51,6 +52,17 @@ Joins the elements of an array.
 ### impureJoin
 
 The impure version of join.
+
+### isArray
+
+Tests if an object is an array and returns true if it is or false otherwise.
+
+**Usage:** `obj | isArray`
+
+```html
+<p>{{ [1, 2] | isArray }}</p> <!-- Output: "true" -->
+<p>{{ "12" | isArray }}</p> <!-- Output: "false" -->
+```
 
 ### safeUrl
 
