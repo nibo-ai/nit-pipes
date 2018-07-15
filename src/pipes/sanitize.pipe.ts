@@ -6,7 +6,7 @@ export class SanitizePipe implements PipeTransform {
 
 	constructor(private domSanitizer: DomSanitizer) {}
 
-	transform(value: any, type: string) {
+	transform(value: any, type?: string) {
 		if (!value) {
 			return value;
 		}
