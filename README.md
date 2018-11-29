@@ -1,6 +1,6 @@
 # nit-pipes  
 [![npm version](https://badge.fury.io/js/%40nudgeit%2Fnit-pipes.svg)](https://badge.fury.io/js/%40nudgeit%2Fnit-pipes)
-[![Build Status](https://travis-ci.org/NudgeIT/nit-pipes.svg?branch=master)](https://travis-ci.org/NudgeIT/nit-pipes)
+[![Build Status](https://travis-ci.org/nibo-ai/nit-pipes.svg?branch=master)](https://travis-ci.org/nibo-ai/nit-pipes)
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/NudgeIT/nit-pipes/blob/master/LICENSE)
 
 This is a collection of useful pipes for AngularIO (v>=4) with no external dependencies.
