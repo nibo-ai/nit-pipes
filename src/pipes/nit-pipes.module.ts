@@ -5,13 +5,15 @@ import { InitialsPipe } from './initials.pipe';
 import { ArrayJoinPipe, ArrayImpureJoinPipe } from './array.join.pipe';
 import { IsArrayPipe } from './is.array.pipe';
 import { SanitizePipe } from './sanitize.pipe';
+import { LoadPipe } from './load.pipe';
 
 const NIT_PIPES = [
 	SafeUrlPipe,
 	SanitizePipe,
 	InitialsPipe,
 	ArrayJoinPipe, ArrayImpureJoinPipe,
-	IsArrayPipe
+	IsArrayPipe,
+	LoadPipe
 ];
 
 @NgModule({
@@ -19,8 +21,3 @@ const NIT_PIPES = [
 	exports: NIT_PIPES,
 })
 export class NitPipesModule { }
-
-export { SafeUrlPipe } from './safe-url.pipe';
-export { SanitizePipe } from "./sanitize.pipe";
-export { InitialsPipe } from './initials.pipe';
-export { ArrayJoinPipe, ArrayImpureJoinPipe } from './array.join.pipe';

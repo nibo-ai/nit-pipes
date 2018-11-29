@@ -4,15 +4,14 @@ describe('ArrayJoinPipe', () => {
 
 	let pipe: ArrayJoinPipe, impurePipe: ArrayImpureJoinPipe;
 
-	//setup
 	beforeEach(() => {
 		pipe = new ArrayJoinPipe();
 		impurePipe = new ArrayImpureJoinPipe();
 	});
 
-  it('should create an instance', () => {
-    expect(pipe).toBeTruthy();
-  });
+	it('should create an instance', () => {
+		expect(pipe).toBeTruthy();
+	});
 
 	it('should work with undefined', () => {
 		expect(pipe.transform(undefined)).toBeUndefined();
@@ -33,8 +32,8 @@ describe('ArrayJoinPipe', () => {
 	});
 
 	it('impure: should create an instance', () => {
-    expect(impurePipe).toBeTruthy();
-  });
+		expect(impurePipe).toBeTruthy();
+	});
 
 	it('impure: should work with undefined', () => {
 		expect(impurePipe.transform(undefined)).toBeUndefined();

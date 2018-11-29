@@ -1,1 +1,1 @@
-export * from "./src/pipes/nit-pipes.module";
+export * from "./src/pipes";

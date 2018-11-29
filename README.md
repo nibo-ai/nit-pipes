@@ -39,6 +39,26 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
 
 ## Pipes
 
+### first
+
+Returns the first n elements of the array. Any negative value of n is treated as 0 and an empty array will be returned.
+
+**Usage:** `array | first: n`
+
+```html
+<p>{{ [1, 2, 3, 4] | first: 2 }}</p> <!-- Output: "1, 2" -->
+```
+
+### first
+
+Returns the last n elements of the array. Any negative value of n is treated as 0 and an empty array will be returned.
+
+**Usage:** `array | last: n`
+
+```html
+<p>{{ [1, 2, 3, 4] | last: 2 }}</p> <!-- Output: "3, 4" -->
+```
+
 ### join
 
 Joins the elements of an array.
