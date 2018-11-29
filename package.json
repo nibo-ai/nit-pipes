@@ -1,13 +1,13 @@
 {
 	"name": "@nudgeit/nit-pipes",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"author": "NudgeIT",
 	"license": "MIT",
 	"scripts": {
 		"lint-ts": "tslint \"src/**/*.ts\"",
 		"lint": "npm run lint-ts",
 		"test": "ng test",
-		"build-lib": "ng-packagr -p ng-package.json",
+		"build-lib": "ng-packagr -p ng-package.json -c src/tsconfig.app.json",
 		"build": "npm run build-lib",
 		"preng-publish": "npm run build",
 		"ng-publish": "npm publish dist --access=public"

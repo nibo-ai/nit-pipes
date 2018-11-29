@@ -6,6 +6,8 @@ import { ArrayJoinPipe, ArrayImpureJoinPipe } from './array.join.pipe';
 import { IsArrayPipe } from './is.array.pipe';
 import { SanitizePipe } from './sanitize.pipe';
 import { LoadPipe } from './load.pipe';
+import { FirstPipe } from './first.pipe';
+import { LastPipe } from './last.pipe';
 
 const NIT_PIPES = [
 	SafeUrlPipe,
@@ -13,7 +15,9 @@ const NIT_PIPES = [
 	InitialsPipe,
 	ArrayJoinPipe, ArrayImpureJoinPipe,
 	IsArrayPipe,
-	LoadPipe
+	LoadPipe,
+	FirstPipe,
+	LastPipe
 ];
 
 @NgModule({

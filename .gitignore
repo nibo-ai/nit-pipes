@@ -38,3 +38,4 @@ testem.log
 .DS_Store
 Thumbs.db
 /.vs
+/nudgeit-nit-pipes.metadata.json
