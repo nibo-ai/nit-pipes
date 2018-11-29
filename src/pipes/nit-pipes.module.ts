@@ -22,6 +22,6 @@ const NIT_PIPES = [
 
 @NgModule({
 	declarations: NIT_PIPES,
-	exports: NIT_PIPES,
+	exports: NIT_PIPES
 })
 export class NitPipesModule { }
