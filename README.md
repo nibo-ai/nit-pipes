@@ -11,11 +11,11 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
  - [Pipes](#Pipes)
 	- [first](#first)
 	- [last](#last)
-	- [join](#join)
     - [impureJoin](#impureJoin)
     - [initials](#initials)
-    - [safeUrl](#safeUrl)
     - [isArray](#isArray)
+	- [join](#join)
+    - [safeUrl](#safeUrl)
 
 ## Installation
 
