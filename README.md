@@ -9,7 +9,9 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
 
  - [Installation](#installation)
  - [Pipes](#Pipes)
-    - [join](#join)
+	- [first](#first)
+	- [last](#last)
+	- [join](#join)
     - [impureJoin](#impureJoin)
     - [initials](#initials)
     - [safeUrl](#safeUrl)
@@ -49,7 +51,7 @@ Returns the first n elements of the array. Any negative value of n is treated as
 <p>{{ [1, 2, 3, 4] | first: 2 }}</p> <!-- Output: "1, 2" -->
 ```
 
-### first
+### last
 
 Returns the last n elements of the array. Any negative value of n is treated as 0 and an empty array will be returned.
 
