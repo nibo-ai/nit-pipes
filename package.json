@@ -1,6 +1,6 @@
 {
 	"name": "@nudgeit/nit-pipes",
-	"version": "0.2.1",
+	"version": "0.2.3",
 	"author": "NudgeIT",
 	"license": "MIT",
 	"scripts": {
@@ -41,7 +41,8 @@
 		"url": "https://github.com/nibo-ai/nit-pipes.git"
 	},
 	"peerDependencies": {
-		"@angular/core": "^4.0.1 || ~5.0.0 || ~5.2.0 || ~6.0.0 || ~7.0.0"
+		"@angular/core": "^4.0.1 || ~5.0.0 || ~5.2.0 || ~6.0.0 || ~7.0.0",
+		"rxjs": "~6.0.0"
 	},
 	"devDependencies": {
 		"@angular-devkit/build-angular": "~0.10.0",
