@@ -15,7 +15,7 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [initials](#initials)
     - [isArray](#isArray)
 	- [join](#join)
-    - [safeUrl](#safeUrl)
+    - [~safeUrl~](#safeUrl)
 	- [sanitize](#sanitize)
 
 ## Installation
@@ -87,9 +87,10 @@ Tests if an object is an array and returns true if it is or false otherwise.
 <p>{{ "12" | isArray }}</p> <!-- Output: "false" -->
 ```
 
-### safeUrl
+### ~safeUrl~
 
-Deprecated! Better use sanitize
+Deprecated - better use sanitize!
+
 Returns the safe version of an URL. Use this with care!
 
 **Usage:** `url | safeUrl`
