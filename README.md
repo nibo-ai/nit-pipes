@@ -16,6 +16,7 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [isArray](#isArray)
 	- [join](#join)
     - [safeUrl](#safeUrl)
+	- [sanitize](#sanitize)
 
 ## Installation
 
@@ -88,6 +89,7 @@ Tests if an object is an array and returns true if it is or false otherwise.
 
 ### safeUrl
 
+Deprecated! Better use sanitize
 Returns the safe version of an URL. Use this with care!
 
 **Usage:** `url | safeUrl`
@@ -100,4 +102,19 @@ Returns the initials of the words in a string.
 
 ```html
 <p>{{ "Nibo AI" | initials }}</p> <!-- Output: "NA" -->
+```
+
+### sanitize
+
+Returns the safe version of an URL or HTML. Use this with care!
+
+**Usage:** `string | sanitize: context`
+
+Context can be one of 'HTML', 'STYLE', 'SCRIPT', 'URL', 'RESOURCE_URL' (case insensitive) 
+depending on what content you would like to sanitize.
+
+```html
+<img [src]="url | sanitize: 'url'"/> <!-- Output: safe version of the URL -->
+<script [src]="url | sanitize: 'resource_url'"></script> <!-- Output: safe version of the URL -->
+<p [innerHtml]="content | sanitize: 'html'"></p> <!-- Output: necessary if content contains tags like SCRIPT -->
 ```
