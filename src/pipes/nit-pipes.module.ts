@@ -8,8 +8,11 @@ import { LastPipe } from './last.pipe';
 import { LoadPipe } from './load.pipe';
 import { SafeUrlPipe } from './safe-url.pipe';
 import { SanitizePipe } from './sanitize.pipe';
+import { SafePipe } from './safe.pipe';
+import { XFilterPipe } from './xfilter.pipe';
 
 const NIT_PIPES = [
+	SafePipe,
 	SafeUrlPipe,
 	SanitizePipe,
 	InitialsPipe,
@@ -17,7 +20,8 @@ const NIT_PIPES = [
 	IsArrayPipe,
 	LoadPipe,
 	FirstPipe,
-	LastPipe
+	LastPipe,
+	XFilterPipe
 ];
 
 @NgModule({

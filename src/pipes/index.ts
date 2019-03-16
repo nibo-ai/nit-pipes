@@ -7,4 +7,7 @@ export * from './is.array.pipe';
 export * from "./last.pipe";
 export * from "./load.pipe";
 export * from './safe-url.pipe';
+export * from './safe.pipe';
 export * from "./sanitize.pipe";
+export * from './xfilter.pipe';
+

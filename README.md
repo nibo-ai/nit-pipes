@@ -16,7 +16,9 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [isArray](#isArray)
 	- [join](#join)
     - [~safeUrl~](#safeUrl)
+	- [safe](#safe)
 	- [sanitize](#sanitize)
+	- [xfilter](#xfilter)
 
 ## Installation
 
@@ -89,7 +91,7 @@ Tests if an object is an array and returns true if it is or false otherwise.
 
 ### ~safeUrl~
 
-Deprecated - better use sanitize!
+Deprecated - better use safe!
 
 Returns the safe version of an URL. Use this with care!
 
@@ -104,10 +106,24 @@ Returns the initials of the words in a string.
 ```html
 <p>{{ "Nibo AI" | initials }}</p> <!-- Output: "NA" -->
 ```
+### safe
+
+Returns the safe version of an URL or HTML. Use this with care!
+
+**Usage:** `string | safe: context`
+
+Context can be one of 'HTML', 'STYLE', 'SCRIPT', 'URL', 'RESOURCE_URL' (case insensitive) 
+depending on what content you would like to sanitize.
+
+```html
+<img [src]="url | safe: 'url'"/> <!-- Output: safe version of the URL -->
+<script [src]="url | safe: 'resource_url'"></script> <!-- Output: safe version of the URL -->
+<p [innerHtml]="content | safe: 'html'"></p> <!-- Output: necessary if content contains tags like SCRIPT -->
+```
 
 ### sanitize
 
-Returns the safe version of an URL or HTML. Use this with care!
+Returns the sanitized version of an URL or HTML. Use this with care!
 
 **Usage:** `string | sanitize: context`
 
@@ -118,4 +134,18 @@ depending on what content you would like to sanitize.
 <img [src]="url | sanitize: 'url'"/> <!-- Output: safe version of the URL -->
 <script [src]="url | sanitize: 'resource_url'"></script> <!-- Output: safe version of the URL -->
 <p [innerHtml]="content | sanitize: 'html'"></p> <!-- Output: necessary if content contains tags like SCRIPT -->
+```
+
+### xfilter
+
+Joins the elements of an array.
+
+**Usage:** `array | xfilter: customFilter`
+
+```typescript
+isOdd = (x) => x % 2 === 1;
+```
+
+```html
+<p>{{ [1, 2, 3, 4] | xfilter: isOdd }}</p> <!-- Output: "1, 3" -->
 ```

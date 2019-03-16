@@ -7,15 +7,14 @@ describe('SafeUrlPipe', () => {
 
 	let pipe: SafeUrlPipe, domSanitizer: DomSanitizer;
 
-	//setup
 	beforeEach(() => {
 		domSanitizer = TestBed.get(DomSanitizer);
 		pipe = new SafeUrlPipe(domSanitizer);
 	});
 
-  it('should create an instance', () => {
-    expect(pipe).toBeTruthy();
-  });
+	it('should create an instance', () => {
+		expect(pipe).toBeTruthy();
+	});
 
 	it('should work with undefined string', () => {
 		expect(pipe.transform(undefined)).toBeUndefined();

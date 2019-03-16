@@ -17,7 +17,7 @@ export class SanitizePipe implements PipeTransform {
 			context = context.toString();
 		}
 		if (typeof context === "string" || context instanceof String) {
-			context = SecurityContext[context.toUpperCase()];
+			context = SecurityContext[context.replace("-", "_").toUpperCase()];
 		}
 		return this.domSanitizer.sanitize(context as SecurityContext, value);
 	}
