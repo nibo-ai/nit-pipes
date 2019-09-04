@@ -3,9 +3,6 @@
 	"dest": "dist",
 	"lib": {
 		"entryFile": "public_api.ts",
-		"externals": {
-			"@angular/core": "@angular/core"
-		},
 		"umdModuleIds": {
 			"rxjs": "rxjs"
 		}
