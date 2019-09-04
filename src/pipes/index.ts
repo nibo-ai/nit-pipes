@@ -1,6 +1,7 @@
 export * from "./nit-pipes.module";
 
 export * from './array.join.pipe';
+export * from "./debounce.pipe";
 export * from "./first.pipe";
 export * from './initials.pipe';
 export * from './is.array.pipe';

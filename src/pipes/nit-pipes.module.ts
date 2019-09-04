@@ -10,17 +10,19 @@ import { SafeUrlPipe } from './safe-url.pipe';
 import { SanitizePipe } from './sanitize.pipe';
 import { SafePipe } from './safe.pipe';
 import { XFilterPipe } from './xfilter.pipe';
+import { DebouncePipe } from './debounce.pipe';
 
 const NIT_PIPES = [
+	ArrayJoinPipe, ArrayImpureJoinPipe,
+	DebouncePipe,
+	FirstPipe,
+	InitialsPipe,
+	IsArrayPipe,
+	LastPipe,
+	LoadPipe,
 	SafePipe,
 	SafeUrlPipe,
 	SanitizePipe,
-	InitialsPipe,
-	ArrayJoinPipe, ArrayImpureJoinPipe,
-	IsArrayPipe,
-	LoadPipe,
-	FirstPipe,
-	LastPipe,
 	XFilterPipe
 ];
 
