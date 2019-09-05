@@ -1,8 +1,8 @@
 import { ChangeDetectorRef, NgZone, Pipe, PipeTransform } from '@angular/core';
 import { Observable, timer } from 'rxjs';
-import { flatMap } from "rxjs/operators";
+import { flatMap, take } from "rxjs/operators";
 
-@Pipe({name: 'debounce', pure: false})
+@Pipe({name: 'debounce'})
 export class DebouncePipe implements PipeTransform {
 	private currentValue: any = null;
 	private transformValue: any = null;
@@ -13,7 +13,7 @@ export class DebouncePipe implements PipeTransform {
 
 	transform(value: any, debounceTime?: number): any {
 		if (value instanceof Observable) {
-			return timer(typeof debounceTime === 'number' ? debounceTime : 500).pipe(flatMap(() => value));
+			return timer(typeof debounceTime === 'number' ? debounceTime : 500).pipe(take(1), flatMap(() => value));
 		}
 		if (this.currentValue == null) {
 			this.currentValue = value;
