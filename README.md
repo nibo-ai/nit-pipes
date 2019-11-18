@@ -15,6 +15,7 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [initials](#initials)
     - [isArray](#isArray)
     - [isBoolean](#isBoolean)
+    - [isDate](#isDate)
     - [isFunction](#isFunction)
     - [isNull](#isNull)
     - [isString](#isString)
@@ -103,6 +104,12 @@ Tests if a value is a boolean and returns true if it is or false otherwise.
 <p>{{ false | isBoolean }}</p> <!-- Output: "true" -->
 <p>{{ "12" | isBoolean }}</p> <!-- Output: "false" -->
 ```
+
+### isDate
+
+Tests if a value is a date and returns true if it is or false otherwise.
+
+**Usage:** `value | isDate`
 
 ### isFunction
 
