@@ -14,6 +14,10 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
     - [impureJoin](#impureJoin)
     - [initials](#initials)
     - [isArray](#isArray)
+    - [isBoolean](#isBoolean)
+    - [isFunction](#isFunction)
+    - [isNull](#isNull)
+    - [isString](#isString)
 	- [join](#join)
     - [~safeUrl~](#safeUrl)
 	- [safe](#safe)
@@ -80,14 +84,50 @@ The impure version of join.
 
 ### isArray
 
-Tests if an object is an array and returns true if it is or false otherwise.
+Tests if a value is an array and returns true if it is or false otherwise.
 
-**Usage:** `obj | isArray`
+**Usage:** `value | isArray`
 
 ```html
 <p>{{ [1, 2] | isArray }}</p> <!-- Output: "true" -->
 <p>{{ "12" | isArray }}</p> <!-- Output: "false" -->
 ```
+
+### isBoolean
+
+Tests if a value is a boolean and returns true if it is or false otherwise.
+
+**Usage:** `value | isBoolean`
+
+```html
+<p>{{ false | isBoolean }}</p> <!-- Output: "true" -->
+<p>{{ "12" | isBoolean }}</p> <!-- Output: "false" -->
+```
+
+### isFunction
+
+Tests if a value is a function and returns true if it is or false otherwise.
+
+**Usage:** `value | isFunction`
+
+### isNull
+
+Tests if a value is null or undefined and returns true if it is or false otherwise.
+
+**Usage:** `value | isNull`
+
+```html
+<p>{{ null | isNull }}</p> <!-- Output: "true" -->
+<p>{{ undefined | isNull }}</p> <!-- Output: "true" -->
+<p>{{ "12" | isNull }}</p> <!-- Output: "false" -->
+<p>{{ "" | isNull }}</p> <!-- Output: "false" -->
+```
+
+### isString
+
+Tests if a value is a string and returns true if it is or false otherwise.
+
+**Usage:** `value | isString`
 
 ### ~safeUrl~
 

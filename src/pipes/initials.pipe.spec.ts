@@ -4,14 +4,13 @@ describe('InitialsPipe', () => {
 
 	let pipe: InitialsPipe;
 
-	//setup
 	beforeEach(() => {
 		pipe = new InitialsPipe();
 	});
 
-  it('should create an instance', () => {
-    expect(pipe).toBeTruthy();
-  });
+	it('should create an instance', () => {
+		expect(pipe).toBeTruthy();
+	});
 
 	it('should work with undefined string', () => {
 		expect(pipe.transform(undefined)).toBeUndefined();

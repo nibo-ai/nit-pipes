@@ -11,6 +11,10 @@ import { SanitizePipe } from './sanitize.pipe';
 import { SafePipe } from './safe.pipe';
 import { XFilterPipe } from './xfilter.pipe';
 import { DebouncePipe } from './debounce.pipe';
+import { IsBooleanPipe } from './is.boolean.pipe';
+import { IsFunctionPipe } from './is.function.pipe';
+import { IsNullPipe } from './is.null.pipe';
+import { IsStringPipe } from './is.string.pipe';
 
 const NIT_PIPES = [
 	ArrayJoinPipe, ArrayImpureJoinPipe,
@@ -18,6 +22,10 @@ const NIT_PIPES = [
 	FirstPipe,
 	InitialsPipe,
 	IsArrayPipe,
+	IsBooleanPipe,
+	IsFunctionPipe,
+	IsNullPipe,
+	IsStringPipe,
 	LastPipe,
 	LoadPipe,
 	SafePipe,
