@@ -15,6 +15,7 @@ import { IsBooleanPipe } from './is.boolean.pipe';
 import { IsFunctionPipe } from './is.function.pipe';
 import { IsNullPipe } from './is.null.pipe';
 import { IsStringPipe } from './is.string.pipe';
+import { IsDatePipe } from './is.date.pipe';
 
 const NIT_PIPES = [
 	ArrayJoinPipe, ArrayImpureJoinPipe,
@@ -23,6 +24,7 @@ const NIT_PIPES = [
 	InitialsPipe,
 	IsArrayPipe,
 	IsBooleanPipe,
+	IsDatePipe,
 	IsFunctionPipe,
 	IsNullPipe,
 	IsStringPipe,
