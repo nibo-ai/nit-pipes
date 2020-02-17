@@ -11,16 +11,16 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
  - [Pipes](#Pipes)
 	- [first](#first)
 	- [last](#last)
-    - [impureJoin](#impureJoin)
-    - [initials](#initials)
-    - [isArray](#isArray)
-    - [isBoolean](#isBoolean)
-    - [isDate](#isDate)
-    - [isFunction](#isFunction)
-    - [isNull](#isNull)
-    - [isString](#isString)
+	- [impureJoin](#impureJoin)
+	- [initials](#initials)
+	- [isArray](#isArray)
+	- [isBoolean](#isBoolean)
+	- [isDate](#isDate)
+	- [isFunction](#isFunction)
+	- [isNull](#isNull)
+	- [isString](#isString)
 	- [join](#join)
-    - [~safeUrl~](#safeUrl)
+	- [~safeUrl~](#safeUrl)
 	- [safe](#safe)
 	- [sanitize](#sanitize)
 	- [xfilter](#xfilter)
@@ -41,8 +41,8 @@ This is a collection of useful pipes for AngularIO (v>=4) with no external depen
   @NgModule({
    // ...
    imports: [
-     // ...
-     NitPipesModule
+	 // ...
+	 NitPipesModule
    ]
   })
   ```

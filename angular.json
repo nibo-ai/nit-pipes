@@ -4,50 +4,47 @@
   "newProjectRoot": "projects",
   "projects": {
     "nit-pipes": {
-      "root": "",
-      "sourceRoot": "src",
       "projectType": "library",
+      "root": "projects/nit-pipes",
+      "sourceRoot": "projects/nit-pipes/src",
       "prefix": "lib",
-	  "architect": {
-		"build": {
-			"builder": "@angular-devkit/build-ng-packagr:build",
-			"options": {
-				"tsConfig": "tsconfig.lib.json",
-				"project": "ng-package.json"
-			},
-			"configurations": {
-				"production": {
-					"tsConfig": "tsconfig.lib.prod.json"
-				}
-			}
-		},
-		"test": {
-			"builder": "@angular-devkit/build-angular:karma",
-			"options": {
-				"main": "src/test.ts",
-				"polyfills": "src/polyfills.ts",
-				"tsConfig": "tsconfig.spec.json",
-				"karmaConfig": "karma.conf.js",
-				"scripts": [],
-				"assets": [
-					"src/favicon.ico",
-					"src/assets"
-				]
-			}
-		},
-		"lint": {
-			"builder": "@angular-devkit/build-angular:tslint",
-			"options": {
-				"tsConfig": [
-					"tsconfig.lib.json",
-					"tsconfig.spec.json"
-				],
-				"exclude": [
-					"**/node_modules/**"
-				]
-			}
-		}
-	  }
-	}
-  }
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/nit-pipes/tsconfig.lib.json",
+            "project": "projects/nit-pipes/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/nit-pipes/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/nit-pipes/src/test.ts",
+            "tsConfig": "projects/nit-pipes/tsconfig.spec.json",
+            "karmaConfig": "projects/nit-pipes/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/nit-pipes/tsconfig.lib.json",
+              "projects/nit-pipes/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "cli": {
+    "analytics": "f595522f-ca77-4696-9a88-40254532a6eb"
+  },
+  "defaultProject": "nit-pipes"
 }
