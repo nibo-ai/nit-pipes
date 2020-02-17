@@ -1,16 +1,20 @@
 {
 	"name": "@nudgeit/nit-pipes",
-	"version": "0.7.3",
+	"version": "0.8.0",
 	"author": "NudgeIT",
 	"license": "MIT",
 	"scripts": {
-		"lint-ts": "tslint \"src/**/*.ts\"",
-		"lint": "npm run lint-ts",
+		"ng": "ng",
+		"build": "ng build",
 		"test": "ng test",
-		"build-lib": "ng-packagr -p ng-package.json -c src/tsconfig.app.json",
-		"build": "npm run build-lib",
-		"preng-publish": "npm run test && npm run build",
-		"ng-publish": "npm publish dist --access=public"
+		"lint": "ng lint",
+		"e2e": "ng e2e",
+		"build-prod": "ng build --prod",
+		"prepublish-lib": "npm run build-prod",
+		"publish-lib": "npm publish dist/ngx-fullstory"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"keywords": [
 		"ng2",
@@ -22,6 +26,8 @@
 		"angular5",
 		"angular6",
 		"angular7",
+		"angular8",
+		"angular9",
 		"angulario",
 		"angularjs",
 		"useful",
@@ -41,23 +47,24 @@
 		"url": "https://github.com/nibo-ai/nit-pipes.git"
 	},
 	"peerDependencies": {
-		"@angular/core": ">= 4.0.1",
-		"rxjs": ">= 6.0.0"
+		"@angular/core": ">=6.0.0",
+		"@angular/common": ">=6.0.0",
+		"rxjs": ">=6.0.0"
 	},
 	"devDependencies": {
-		"@angular-devkit/build-angular": "~0.13.6",
-		"@angular-devkit/build-ng-packagr": "~0.13.6",
-		"@angular/cli": "^7.2.9",
-		"@angular/common": "^7.2.9",
-		"@angular/compiler": "^7.2.9",
-		"@angular/compiler-cli": "^7.2.9",
-		"@angular/core": "^7.2.9",
-		"@angular/platform-browser": "^7.2.9",
-		"@angular/platform-browser-dynamic": "^7.2.9",
+		"@angular-devkit/build-angular": "~0.900.2",
+		"@angular-devkit/build-ng-packagr": "~0.900.2",
+		"@angular/cli": "^9.0.2",
+		"@angular/common": "^9.0.1",
+		"@angular/compiler": "^9.0.1",
+		"@angular/compiler-cli": "^9.0.1",
+		"@angular/core": "^9.0.1",
+		"@angular/platform-browser": "^9.0.1",
+		"@angular/platform-browser-dynamic": "^9.0.1",
 		"@types/jasmine": "^2.8.8",
 		"@types/jasminewd2": "~2.0.3",
-		"@types/node": "^8.9.4",
-		"codelyzer": "~4.5.0",
+		"@types/node": "^12.11.1",
+		"codelyzer": "^5.1.2",
 		"core-js": "^2.5.4",
 		"jasmine-core": "~2.99.1",
 		"jasmine-spec-reporter": "~4.2.1",
@@ -68,10 +75,10 @@
 		"karma-jasmine": "~1.1.2",
 		"karma-jasmine-html-reporter": "^0.2.2",
 		"protractor": "^5.4.0",
+		"tslib": "^1.10.0",
 		"tslint": "~5.11.0",
-		"typescript": "~3.1.1",
-		"zone.js": "~0.8.26",
-		"ng-packagr": "latest",
-		"tsickle": "latest"
+		"typescript": "~3.7.5",
+		"zone.js": "~0.10.2",
+		"ng-packagr": "^9.0.0"
 	}
 }
