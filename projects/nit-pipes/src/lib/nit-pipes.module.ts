@@ -23,7 +23,7 @@ import { XFilterPipe } from './xfilter.pipe';
 })
 export class NitPipesModule {
 
-	public static readonly PIPES = [
+	public static readonly PIPES: any[] = [
 		ArrayJoinPipe, ArrayImpureJoinPipe,
 		DebouncePipe,
 		FirstPipe,
