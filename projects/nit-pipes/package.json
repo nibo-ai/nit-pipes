@@ -1,6 +1,6 @@
 {
 	"name": "@nudgeit/nit-pipes",
-	"version": "0.9.5",
+	"version": "0.9.6",
 	"description": "TypeScript library containing a set of useful pipes. See README for mode details ",
 	"license": "MIT",
 	"repository": {

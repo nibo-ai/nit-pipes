@@ -196,3 +196,13 @@ isOdd = (x) => x % 2 === 1;
 ```html
 <p>{{ [1, 2, 3, 4] | xfilter: isOdd }}</p> <!-- Output: "1, 3" -->
 ```
+
+## Development
+
+This section is ***solely*** for the developers of this library, not for its users/consumers.
+
+### Publish a new version
+1. Change the version in `package.json`, `package-lock.json` and `projects\nit-pipes\package.json`.
+2. Run `npm run publish-lib`. You'll need an OTP to authenticate and publish.
+3. Push the changes in git.
+4. Create a new release on the GitHub site.
