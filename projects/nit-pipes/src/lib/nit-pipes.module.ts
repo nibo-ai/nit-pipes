@@ -17,27 +17,28 @@ import { SafeUrlPipe } from './safe-url.pipe';
 import { SanitizePipe } from './sanitize.pipe';
 import { XFilterPipe } from './xfilter.pipe';
 
-const NIT_PIPES = [
-	ArrayJoinPipe, ArrayImpureJoinPipe,
-	DebouncePipe,
-	FirstPipe,
-	InitialsPipe,
-	IsArrayPipe,
-	IsBooleanPipe,
-	IsDatePipe,
-	IsFunctionPipe,
-	IsNullPipe,
-	IsStringPipe,
-	LastPipe,
-	LoadPipe,
-	SafePipe,
-	SafeUrlPipe,
-	SanitizePipe,
-	XFilterPipe
-];
-
 @NgModule({
-	declarations: NIT_PIPES,
-	exports: NIT_PIPES
+	declarations: NitPipesModule.PIPES,
+	exports: NitPipesModule.PIPES
 })
-export class NitPipesModule { }
+export class NitPipesModule {
+
+	public static readonly PIPES = [
+		ArrayJoinPipe, ArrayImpureJoinPipe,
+		DebouncePipe,
+		FirstPipe,
+		InitialsPipe,
+		IsArrayPipe,
+		IsBooleanPipe,
+		IsDatePipe,
+		IsFunctionPipe,
+		IsNullPipe,
+		IsStringPipe,
+		LastPipe,
+		LoadPipe,
+		SafePipe,
+		SafeUrlPipe,
+		SanitizePipe,
+		XFilterPipe
+	];
+}
